@@ -11,7 +11,6 @@ import { Image } from "react-native-svg";
 
 
 
-
 const Products = () => {
     const [searchQuery, setSearchQuery] = React.useState('');
     return (
