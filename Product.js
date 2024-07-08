@@ -8,6 +8,7 @@ import { Searchbar, TextInput } from "react-native-paper";
 import { white } from "react-native-paper/lib/typescript/styles/themes/v2/colors";
 import LinearGradient from 'react-native-linear-gradient';
 import Banner from './Bannerscroll'
+import Vegetables from "./VegetableFlatlist";
 
 
 const Data = [
@@ -142,8 +143,10 @@ const Products = () => {
             </View>
             <View style={{ width: wp('100%'),marginTop:10 }}>
                 <Text style={{ fontSize: 15, fontWeight: '600', color: 'black', fontStyle: 'normal',marginLeft:20 }}>Top Picks for You</Text>
+                <Vegetables></Vegetables>
                 <Banner></Banner>
             </View>
+
         </SafeAreaView>
 
     );
