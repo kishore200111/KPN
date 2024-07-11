@@ -55,7 +55,7 @@ const Login = () => {
                                 placeholder="Phone Number"></TextInput>
                                 
                             </View>
-                            <Pressable style={{ backgroundColor: '#ecfffa', borderRadius: 8 }} onPress={() => navigation.navigate('Products')}>
+                            <Pressable style={{ backgroundColor: '#ecfffa', borderRadius: 8 }} onPress={() => navigation.navigate('tab')}>
                                 <Text style={{ color: '#98d0b8', fontWeight: '500', padding: 14, textAlign: 'center' }}>Continue</Text>
                             </Pressable>
                             <View style={{ flexDirection: 'row' }}>

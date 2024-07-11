@@ -88,23 +88,48 @@ const images = [
 ];
 
 const Banner = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    useEffect(() => {
+                const interval = setInterval(() => {
+                    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+                }, 3000); // Change image every 3 seconds
+        
+                return () => clearInterval(interval);
+            }, []);
     
 return(
-    <View style={{justifyContent:"center",alignSelf:'center'}}>
+    <View style={{width:wp('80%'), marginLeft:40,justifyContent:'center '}}>
          <SliderBox
           images={images}
           autoplay
           circleLoop
-          sliderBoxHeight={hp('20%')}
-          dotColor="gold"
-          inactiveDotColor="gainsboro"
+          sliderBoxHeight={130}
           parentWidth={wp('80%')}
-          resizeMode="contain"
+          //resizeMethod='resize'
+        resizeMode="cover"
+        ImageComponentStyle={{borderRadius:12}}
         ></SliderBox>
+        <Text style={styles.pagination}>{`${activeIndex + 1} / ${images.length}`}</Text>
     </View>
    
 )    
 }
 
+const styles=StyleSheet.create({
+    pagination: {
+                position: 'absolute',
+                bottom: 10,
+                right: 1,
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                color: 'white',
+                paddingHorizontal: 4,
+                paddingVertical: 2,
+                borderRadius: 10,
+                textAlign:'center'
+            },
+})
+
 export default Banner;
+
 
