@@ -107,7 +107,7 @@ return(
           sliderBoxHeight={130}
           parentWidth={wp('80%')}
           //resizeMethod='resize'
-        resizeMode="cover"
+        resizeMode="contain"
         ImageComponentStyle={{borderRadius:12}}
         ></SliderBox>
         <Text style={styles.pagination}>{`${activeIndex + 1} / ${images.length}`}</Text>

@@ -81,7 +81,7 @@ const Vegetable = (item) => {
             <View style={{ width: wp('22%'), height: hp('8%'), backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderRadius: 14, borderWidth: 1, borderColor: 'lightgrey', marginTop: 10, marginRight: 2 }}>
                 <Image style={{ width: wp('14%'), height: hp('8%'), resizeMode: 'contain', alignSelf: 'center' }} source={item.item.image} />
             </View>
-            <View style={{ backgroundColor: 'yellow', position: 'absolute', width: wp('5%'), height: hp('2.3%'), borderRadius: 18, borderColor: 'goldenrod', borderWidth: 1, top: 3, right: -2 }}>
+            <View style={{ backgroundColor: 'yellow', position: 'absolute', width: wp('6%'), height: hp('3%'), borderColor: 'goldenrod',borderRadius:20, borderWidth: 1, top: 3, right: -2,justifyContent:'center',alignItems:'center' }}>
                 <Text style={{ textAlign: 'center', fontWeight: '400', marginBottom: 4 }}>+</Text>
             </View>
             <Text style={{ textAlign: 'center', marginLeft: 10 }} >{item.item.title}</Text>

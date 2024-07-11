@@ -39,7 +39,7 @@ function HomeScreen() {
   return (
     <SafeAreaView style={{ height: hp('100%'), width: wp('100%'), flexDirection: 'column', backgroundColor: 'seagreen' }}>
       <StatusBar backgroundColor={'seagreen'}></StatusBar>
-     
+      <View style={{ width: wp('100%'), height: hp('78%'), position: 'relative' }}>
         <SliderBox
           images={images}
           autoplay
@@ -48,19 +48,15 @@ function HomeScreen() {
           dotColor="gold"
           inactiveDotColor="gainsboro"
         ></SliderBox>
-
-        <View style={{ width: wp('100%'), height: hp('100%'), padding: 10, position: 'absolute', marginTop: 410 }}>
-          <Text style={{ color: 'white', fontSize: 26, textAlign: 'center', fontWeight: 600, marginTop: 130, justifyContent: 'center', alignContent: 'center' }}>Treat Yourself to the finest, freshly sourced products on the market</Text>
-          <View style={{ marginTop: 60 }}>
-            <Pressable style={styles.button} onPress={() => navigation.navigate('Login')}>
-              <Text style={styles.text}>Get Started</Text>
-            </Pressable>
-          </View>
-
+        <View style={{ position: 'absolute', bottom: 18, left: 16 }}>
+          <Text style={{ color: 'white', fontSize: 26, textAlign: 'center', fontWeight: 600, justifyContent: 'center', alignContent: 'center' }}>Treat Yourself to the finest, freshly sourced products on the market</Text>
         </View>
-
-
-     
+      </View>
+      <View style={{ width: wp('100%'), height: hp('100%'), padding: 10 }}>
+        <Pressable style={styles.button} onPress={() => navigation.navigate('Login')}>
+          <Text style={styles.text}>Get Started</Text>
+        </Pressable>
+      </View>
     </SafeAreaView>
   );
 }
@@ -84,47 +80,56 @@ function DetailsScreen() {
 
 const Stack = createNativeStackNavigator();
 
-const renderHeaderBackground = () => 
-{
-  return(
-  <LinearGradient
+const renderHeaderBackground = () => {
+  return (
+    <LinearGradient
       colors={['rgba(239,135,190,1)', 'rgba(255,206,230,1)']}
       style={{ flex: 1 }}
       start={{ x: 1, y: 1 }}
       end={{ x: 1, y: 0 }}
-  />);
-  };
+    />);
+};
 function MyTabs() {
   return (
-      <Tab.Navigator>
-          <Tab.Screen name="Product" component={Products} options={{headerShown: false, tabBarLabelStyle: {color: 'black',fontSize:12,fontWeight:'500'}, tabBarLabel:"Home", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon:()=>(  
-              <View style={{backgroundColor:'palegoldenrod',width:wp('10%'),height:hp('3%'),borderRadius:10,justifyContent:'center',alignItems:'center'}}>
-              <Image  style={{width:wp('4.3%'),height:hp('2%')}}source={require('./assets/Image/hut.png')}/>
-              </View>
-          )  }} />
-          <Tab.Screen name="Fresh" component={FreshItems} options={{headerShown: false, tabBarLabelStyle: {color: 'black',fontSize:12,fontWeight:'500'}, tabBarLabel:"Fresh", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon:()=>(  
-              <View style={{backgroundColor:'palegoldenrod',width:wp('10%'),height:hp('3%'),borderRadius:10,justifyContent:'center',alignItems:'center'}}>
-              <Image  style={{width:wp('4.3%'),height:hp('2%')}}source={require('./assets/Image/vegetable.png')}/>
-              </View>
-          )  }} />
-          <Tab.Screen name="Hot Deals" component={HotDeals} options={{headerShown: false, tabBarLabelStyle: {color: 'black',fontSize:12,fontWeight:'500'}, tabBarLabel:"Hot Deals", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon:()=>(  
-              <View style={{backgroundColor:'palegoldenrod',width:wp('10%'),height:hp('3%'),borderRadius:10,justifyContent:'center',alignItems:'center'}}>
-              <Image  style={{width:wp('4.3%'),height:hp('2%')}}source={require('./assets/Image/hot-deal.png')}/>
-              </View>
-          )  }} />
-          <Tab.Screen name="Groceries" component={GroceriesScreen} options={{headerShown: false, tabBarLabelStyle: {color: 'black',fontSize:12,fontWeight:'500'}, tabBarLabel:"Groceries", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon:()=>(  
-              <View style={{backgroundColor:'palegoldenrod',width:wp('10%'),height:hp('3%'),borderRadius:10,justifyContent:'center',alignItems:'center'}}>
-              <Image  style={{width:wp('4.3%'),height:hp('2%')}}source={require('./assets/Image/groceries.png')}/>
-              </View>
-          )  }} />
-          <Tab.Screen name="Reorders" component={ReordersScreen} options={{headerShown: false, tabBarLabelStyle: {color: 'black',fontSize:12,fontWeight:'500'}, tabBarLabel:"Reorder", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon:()=>(  
-              <View style={{backgroundColor:'palegoldenrod',width:wp('10%'),height:hp('3%'),borderRadius:10,justifyContent:'center',alignItems:'center'}}>
-              <Image  style={{width:wp('4.3%'),height:hp('2%')}}source={require('./assets/Image/cycle.png')}/>
-              </View>
-          )  }} />
-          {/* <Tab.Screen name="Fresh"component={FreshItems} options={{headerShown:false,}}/> */}
-          {/* <Tab.Screen name="Settings" component={SettingsScreen} /> */}
-      </Tab.Navigator>
+    <Tab.Navigator>
+      <Tab.Screen name="Product" component={Products} options={{
+        headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Home", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
+          <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/hut.png')} />
+          </View>
+        )
+      }} />
+      <Tab.Screen name="Fresh" component={FreshItems} options={{
+        headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Fresh", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
+          <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/vegetable.png')} />
+          </View>
+        )
+      }} />
+      <Tab.Screen name="Hot Deals" component={HotDeals} options={{
+        headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Hot Deals", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
+          <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/hot-deal.png')} />
+          </View>
+        )
+      }} />
+      <Tab.Screen name="Groceries" component={GroceriesScreen} options={{
+        headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Groceries", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
+          <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/groceries.png')} />
+          </View>
+        )
+      }} />
+      <Tab.Screen name="Reorders" component={ReordersScreen} options={{
+        headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Reorder", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
+          <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/cycle.png')} />
+          </View>
+        )
+      }} />
+      {/* <Tab.Screen name="Fresh"component={FreshItems} options={{headerShown:false,}}/> */}
+      {/* <Tab.Screen name="Settings" component={SettingsScreen} /> */}
+    </Tab.Navigator>
   );
 }
 
@@ -139,7 +144,7 @@ function Main() {
         <Stack.Screen name="Details" component={DetailsScreen} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Products" component={Products} />
-        <Stack.Screen name='tab' component={MyTabs}/>
+        <Stack.Screen name='tab' component={MyTabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -161,8 +166,8 @@ const styles = StyleSheet.create({
     color: 'black'
 
   },
-  tabicon:{
-    fontWeight:'300'
+  tabicon: {
+    fontWeight: '300'
   }
 })
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ImageBackground, Image, StyleSheet, FlatList, StatusBar, ScrollView } from 'react-native';
+import { View, Text, ImageBackground, Image, StyleSheet, FlatList, StatusBar, ScrollView, Pressable } from 'react-native';
 import { SafeAreaView } from "react-native-safe-area-context";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
@@ -73,14 +73,14 @@ const Products = () => {
                 <LinearGradient
                     colors={['rgba(239,135,190,1)', 'rgba(255,206,230,1)']}
                     start={{ x: 1, y: 1 }}
-                    end={{ x: 1, y: 0 }} style={{ width: wp('100%'), height: hp('52%') }}
+                    end={{ x: 1, y: 0 }} style={{ width: wp('100%'), height: hp('54%') }}
                 >
                     <View style={{ width: wp('25%'), height: hp('4%'), justifyContent: 'space-evenly', alignItems: 'center', marginTop: 20, alignSelf: 'flex-end', flexDirection: 'row', gap: 10, }}>
-                        <View>
-                            <Text style={{ width: wp('10%'), backgroundColor: 'yellow', textAlign: 'center', borderRadius: 10, padding: 5, fontWeight: '600', fontSize: 16, color: 'black' }}>₹0</Text>
+                        <View style={{ backgroundColor: 'yellow', borderRadius: 10, width: wp('10%') }}>
+                            <Text style={{ textAlign: 'center', padding: 5, fontWeight: '600', color: 'black' }}>₹0</Text>
                         </View>
                         <View>
-                            <Image style={{ width: wp('6.2%'), height: hp('2.9%'), marginRight: 10, resizeMode: 'cover' }} source={require('./assets/Image/user.png')}></Image>
+                            <Image style={{ width: wp('6.2%'), height: hp('2.9%'), marginRight: 10, resizeMode: 'contain' }} source={require('./assets/Image/user.png')}></Image>
                         </View>
 
                     </View>
@@ -117,13 +117,6 @@ const Products = () => {
                         horizontal={true}
                         showsHorizontalScrollIndicator={false}
                     />
-                    {/* <View style={{width:wp('18%'),height:hp('11%'),backgroundColor:'white',borderRadius:5,justifyContent:'center'}}>
-                            <Image  style={{width:wp('18%'),height:hp('8%')}}source={require('./assets/Image/Masalas.webp')}></Image>
-                            <Text style={{fontWeight:'400',color:'black',textAlign:'center'}}>Masalas</Text>
-                        </View>
-                        <View></View>
-                        <View></View>
-                        <View></View> */}
                 </LinearGradient>
                 <View style={{ flexDirection: 'row', marginLeft: 5, marginTop: 12 }}>
                     <Text style={{ fontSize: 16, color: 'black', fontWeight: '500', marginLeft: 10 }}>Top Picks for You  </Text>
@@ -286,17 +279,52 @@ const Products = () => {
                     </View>
                 </View>
 
-                <View style={{width:wp('100%'),height:hp('30%'),marginTop:20}}>
-                <LinearGradient
-                    colors={['rgba(213,188,241,1)', 'rgba(245,245,245,1)']}
-                    start={{ x: 0, y: 0 }}
-                    end={{ x: 1, y: 0 }} style={{ width: wp('100%'), height: hp('52%') }}
-                >
-                    <Image  style={{width:wp('80%'),height:hp('10%'),marginTop:10,alignSelf:'center'}}source={require('./assets/Image/brand.png')}/>
-                    <FlatList>
+                <View style={{ width: wp('100%'), height: hp('30%'), marginTop: 20 }}>
+                    <LinearGradient
+                        colors={['rgba(213,188,241,1)', 'rgba(245,245,245,1)']}
+                        start={{ x: 0, y: 0 }}
+                        end={{ x: 1, y: 0 }} style={{ width: wp('100%'), height: hp('30%') }}
+                    >
+                        <Image style={{ width: wp('80%'), height: hp('10%'), marginTop: 10, alignSelf: 'center' }} source={require('./assets/Image/brand.png')} />
+                        <View style={{ flexDirection: 'row' }}>
+                            <View style={{ width: wp('30%'), height: hp('16%'), backgroundColor: 'violet', marginLeft: 10 }}>
 
-                    </FlatList>
+                            </View>
+                            <View style={{ width: wp('30%'), height: hp('16%'), backgroundColor: 'orange', marginLeft: 10 }}>
+
+                            </View>
+                        </View>
+
+
                     </LinearGradient>
+                </View>
+
+                <View>
+                    <View style={{ flexDirection: 'row', marginTop: 20, marginLeft: 10, marginRight: 10 }}>
+                        <Text style={{ fontSize: 16, color: 'black', fontWeight: '500' }}>Offers You can't miss! </Text>
+                        <View style={{ flex: 1, height: 1, backgroundColor: 'lightgrey', alignSelf: 'center' }} />
+                    </View>
+
+                    <View style={{ width: wp('90%'), height: hp('20%'), marginTop: 10, marginLeft: 16 }}>
+                        <LinearGradient
+                            colors={['rgba(84,38,213,1)', 'rgba(147,116,237,1)']}
+                            start={{ x: 0, y: 0 }}
+                            end={{ x: 1, y: 0 }} style={{ width: wp('90%'), height: hp('12%'), borderRadius: 16 }}
+                        >
+                            <View style={{ width: wp('30%'), height: hp('2%'),flex:1,justifyContent: 'center',marginLeft:5}}>
+                                <View>
+                                    <Pressable style={{ backgroundColor: '#ffffff', borderRadius: 4 }}>
+                                        <Text style={{ color: 'black', fontWeight: '500', padding:2,textAlign: 'center', fontSize: 11 }}>UPTO 10% OFF</Text>
+                                    </Pressable>
+                                    <Text style={{ color: 'white', fontWeight: '600',fontFamily:'BerkshireSwash' }}>Laundry Made Easy</Text>
+                                </View>
+
+                            </View>
+
+
+                        </LinearGradient>
+                    </View>
+
                 </View>
 
 
@@ -306,8 +334,8 @@ const Products = () => {
     );
 }
 
-const Brands=(item)=>{
-    
+const Brands = (item) => {
+
 }
 
 const Grocery = (item) => {

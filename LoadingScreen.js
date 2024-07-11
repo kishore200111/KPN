@@ -34,7 +34,7 @@ const Loading=()=>{
            <Animated.Image 
             source={require('./assets/Image/kpn-logo.png')}
             onLoad={()=>setIsImageLoaded(true)}
-            style={[styles.image,{transform:[{rotate}]}]}
+            style={[styles.image,{transform:[{rotate}],resizeMode:'contain'}]}
             />
             {!isImageLoaded && <ActivityIndicator size="small" style={styles.activityIndicator}/>}
            </View>
