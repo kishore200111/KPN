@@ -7,52 +7,52 @@ const Vegetables = () => {
     const Data = [
         {
             id: 1,
-            image: require('./assets/Image/cauliflower.webp'),
+            image: require('../assets/Image/cauliflower.webp'),
             title: 'cauliflower',
         },
         {
             id: 2,
-            image: require('./assets/Image/ginger.webp'),
+            image: require('../assets/Image/ginger.webp'),
             title: 'Ginger',
         },
         {
             id: 3,
-            image: require('./assets/Image/potato.webp'),
+            image: require('../assets/Image/potato.webp'),
             title: 'Potato',
         },
         {
             id: 4,
-            image: require('./assets/Image/ladysfinger.webp'),
+            image: require('../assets/Image/ladysfinger.webp'),
             title: 'Ladies finger',
         },
         {
             id: 5,
-            image: require('./assets/Image/cocunut.png'),
+            image: require('../assets/Image/cocunut.png'),
             title: 'Fresh Coconut',
         },
         {
             id: 6,
-            image: require('./assets/Image/bigonion.jpg'),
+            image: require('../assets/Image/bigonion.jpg'),
             title: 'Onion Bellary',
         },
         {
             id: 7,
-            image: require('./assets/Image/greenchilli.png'),
+            image: require('../assets/Image/greenchilli.png'),
             title: 'Green Chilli',
         },
         {
             id: 8,
-            image: require('./assets/Image/corianderleaves.webp'),
+            image: require('../assets/Image/corianderleaves.webp'),
             title: 'Coriander Leaves',
         },
         {
             id: 9,
-            image: require('./assets/Image/smallonion.jpg'),
+            image: require('../assets/Image/smallonion.jpg'),
             title: 'Small onion',
         },
         {
             id: 10,
-            image: require('./assets/Image/garlic.png'),
+            image: require('../assets/Image/garlic.png'),
             title: 'Garlic',
         },
 

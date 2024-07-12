@@ -14,16 +14,16 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { SliderBox } from "react-native-image-slider-box";
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from './LoginScreen';
+import Login from './src/components/LoginScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Products from './Product';
-import Loading from './LoadingScreen';
+import Products from './src/components/Product';
+import Loading from './src/components/LoadingScreen';
 import PropTypes from 'prop-types';
-import FreshItems from './Fresh';
+import FreshItems from './src/components/Fresh';
 import LinearGradient from 'react-native-linear-gradient';
-import HotDeals from './Hotdeals';
-import GroceriesScreen from './Groceries';
-import ReordersScreen from './Reorders';
+import HotDeals from './src/components/Hotdeals';
+import GroceriesScreen from './src/components/Groceries';
+import ReordersScreen from './src/components/Reorders';
 
 
 const Tab = createBottomTabNavigator();
@@ -31,9 +31,9 @@ const Tab = createBottomTabNavigator();
 function HomeScreen() {
   const navigation = useNavigation();
   const [images, setImage] = useState([
-    require('./assets/Image/home1.jpg'),
-    require('./assets/Image/home2.jpg'),
-    require('./assets/Image/home3.jpg'),
+    require('./src/assets/Image/home1.jpg'),
+    require('./src/assets/Image/home2.jpg'),
+    require('./src/assets/Image/home3.jpg'),
   ]
   )
   return (
@@ -48,7 +48,7 @@ function HomeScreen() {
           dotColor="gold"
           inactiveDotColor="gainsboro"
         ></SliderBox>
-        <View style={{ position: 'absolute', bottom: 18, left: 16 }}>
+        <View style={{ position: 'absolute', bottom: 18}}>
           <Text style={{ color: 'white', fontSize: 26, textAlign: 'center', fontWeight: 600, justifyContent: 'center', alignContent: 'center' }}>Treat Yourself to the finest, freshly sourced products on the market</Text>
         </View>
       </View>
@@ -95,35 +95,35 @@ function MyTabs() {
       <Tab.Screen name="Product" component={Products} options={{
         headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Home", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
           <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/hut.png')} />
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./src/assets/Image/hut.png')} />
           </View>
         )
       }} />
       <Tab.Screen name="Fresh" component={FreshItems} options={{
         headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Fresh", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
           <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/vegetable.png')} />
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./src/assets/Image/vegetable.png')} />
           </View>
         )
       }} />
       <Tab.Screen name="Hot Deals" component={HotDeals} options={{
         headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Hot Deals", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
           <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/hot-deal.png')} />
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./src/assets/Image/hot-deal.png')} />
           </View>
         )
       }} />
       <Tab.Screen name="Groceries" component={GroceriesScreen} options={{
         headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Groceries", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
           <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/groceries.png')} />
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./src/assets/Image/groceries.png')} />
           </View>
         )
       }} />
       <Tab.Screen name="Reorders" component={ReordersScreen} options={{
         headerShown: false, tabBarLabelStyle: { color: 'black', fontSize: 12, fontWeight: '500' }, tabBarLabel: "Reorder", headerTitleAlign: 'center', headerShadowVisible: true, tabBarIcon: () => (
           <View style={{ backgroundColor: 'palegoldenrod', width: wp('10%'), height: hp('3%'), borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./assets/Image/cycle.png')} />
+            <Image style={{ width: wp('4.3%'), height: hp('2%') }} source={require('./src/assets/Image/cycle.png')} />
           </View>
         )
       }} />

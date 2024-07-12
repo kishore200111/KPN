@@ -21,13 +21,13 @@ const Login = () => {
         <SafeAreaView style={{ flex: 1, width: wp('100%'), height: hp('100%') }}>
             <View style={{ backgroundColor: 'seagreen', width: wp('100%'), height: hp('60%') }}>
                 <View>
-                    <Image style={{ width: wp('30%'), height: hp('14%'), margin: 15, resizeMode: 'contain' }} source={require('./assets/Image/kpn-logo.png')}></Image>
+                    <Image style={{ width: wp('30%'), height: hp('14%'), margin: 15, resizeMode: 'contain' }} source={require('../assets/Image/kpn-logo.png')}></Image>
                 </View>
                 <View style={{ width: wp('85%'), alignItems: 'center', alignSelf: 'center' }}>
                     <Text style={{ width: wp('90%'), fontSize: 31, fontWeight: '400', color: 'white', textAlign: 'left', }}>Get farm-fresh products straight from the nearest KPN Store</Text>
                 </View>
                 <View style={{}}>
-                    <Image style={{ width: wp('80%'), height: hp('26%'), justifyContent: 'flex-start', alignSelf: 'flex-end', resizeMode: 'contain' }} source={require('./assets/Image/kpn-main-banner.png')}></Image>
+                    <Image style={{ width: wp('80%'), height: hp('26%'), justifyContent: 'flex-start', alignSelf: 'flex-end', resizeMode: 'contain' }} source={require('../assets/Image/kpn-main-banner.png')}></Image>
                 </View>
             </View>
 

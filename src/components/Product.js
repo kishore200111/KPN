@@ -16,47 +16,47 @@ import { NavigationContainer } from '@react-navigation/native';
 const Data = [
     {
         id: 1,
-        image: require('./assets/Image/Masalas.png'),
+        image: require('../assets/Image/Masalas.png'),
         title: 'Masalas',
     },
     {
         id: 2,
-        image: require('./assets/Image/Dryfruits.webp'),
+        image: require('../assets/Image/Dryfruits.webp'),
         title: 'Dry Fruits',
     },
     {
         id: 3,
-        image: require('./assets/Image/spices.webp'),
+        image: require('../assets/Image/spices.webp'),
         title: 'Whole Spices',
     },
     {
         id: 4,
-        image: require('./assets/Image/juices.png'),
+        image: require('../assets/Image/juices.png'),
         title: 'Juices',
     },
     {
         id: 5,
-        image: require('./assets/Image/Riceproducts.webp'),
+        image: require('../assets/Image/Riceproducts.webp'),
         title: 'Rice Products',
     },
     {
         id: 6,
-        image: require('./assets/Image/yogurt.png'),
+        image: require('../assets/Image/yogurt.png'),
         title: 'Curd & Yogurt',
     },
     {
         id: 7,
-        image: require('./assets/Image/chips.png'),
+        image: require('../assets/Image/chips.png'),
         title: 'Snacks',
     },
     {
         id: 8,
-        image: require('./assets/Image/soap.png'),
+        image: require('../assets/Image/soap.png'),
         title: 'Soap and liquids',
     },
     {
         id: 9,
-        image: require('./assets/Image/oils.png'),
+        image: require('../assets/Image/oils.png'),
         title: 'Oils',
     },
 
@@ -80,7 +80,7 @@ const Products = () => {
                             <Text style={{ textAlign: 'center', padding: 5, fontWeight: '600', color: 'black' }}>₹0</Text>
                         </View>
                         <View>
-                            <Image style={{ width: wp('6.2%'), height: hp('2.9%'), marginRight: 10, resizeMode: 'contain' }} source={require('./assets/Image/user.png')}></Image>
+                            <Image style={{ width: wp('6.2%'), height: hp('2.9%'), marginRight: 10, resizeMode: 'contain' }} source={require('../assets/Image/user.png')}></Image>
                         </View>
 
                     </View>
@@ -91,22 +91,22 @@ const Products = () => {
                             mode="bar"
                             onChangeText={setSearchQuery}
                             value={searchQuery}
-                            icon={require('./assets/Image/search.png')}
-                            clearIcon={require('./assets/Image/search.png')}
+                            icon={require('../assets/Image/search.png')}
+                            clearIcon={require('../assets/Image/search.png')}
                             style={{ justifyContent: 'center', alignItems: 'center', color: 'grey', borderRadius: 10, shadowColor: 'red', shadowOpacity: 0.8, shadowOffset: { width: 0, height: 2 }, shadowRadius: 3, elevation: 5 }}
 
 
                         />
                         {/* <View style={{width:wp('80%'),height:hp('5.5%'),flexDirection:'row',backgroundColor:'white'}}>
                             <View>
-                            <Image  style={{width:wp('6%'),height:hp('3'),margin:10}}source={require('./assets/Image/search.png')}></Image>
+                            <Image  style={{width:wp('6%'),height:hp('3'),margin:10}}source={require('../assets/Image/search.png')}></Image>
                             </View>
                             <View>
                             <TextInput style={{textAlign:'center',justifyContent:'center',alignItems:'center',alignSelf:'center'}} placeholder="Search for fresh goodness"></TextInput>
                             </View>
                         </View> */}
                         <View style={{ width: wp('50%'), height: hp('10%'), justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={styles.shade} source={require('./assets/Image/blockbuster.jpg')}></Image>
+                            <Image style={styles.shade} source={require('../assets/Image/blockbuster.jpg')}></Image>
                         </View>
                         <Text style={{ color: 'indigo', width: wp('60%'), fontStyle: 'italic', fontFamily: 'fantasy', fontWeight: '900', width: wp('100%'), textAlign: 'center' }}>Get minimum 20% 0ff on all essentials</Text>
                     </View>
@@ -136,29 +136,29 @@ const Products = () => {
                     </View>
                     <View style={{ width: wp('100%'), height: hp('18%'), justifyContent: 'center', flexDirection: 'row', gap: 20, alignItems: 'center' }}>
                         <View style={{ width: wp('42%'), height: hp('11%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ resizeMode: 'contain', width: wp('30%'), height: hp('18%') }} source={require('./assets/Image/fruits.png')} />
+                            <Image style={{ resizeMode: 'contain', width: wp('30%'), height: hp('18%') }} source={require('../assets/Image/fruits.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Fresh Fruits</Text>
                         </View>
                         <View style={{ width: wp('42%'), height: hp('11%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ resizeMode: 'contain', width: wp('30%'), height: hp('18%') }} source={require('./assets/Image/vegetables.png')} />
+                            <Image style={{ resizeMode: 'contain', width: wp('30%'), height: hp('18%') }} source={require('../assets/Image/vegetables.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Fresh Vegetables</Text>
                         </View>
                     </View>
                     <View style={{ width: wp('100%'), height: hp('20%'), justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row' }}>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('./assets/Image/exotics.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('../assets/Image/exotics.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Exotics</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/leafy.png')} />
+                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/leafy.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center', width: wp('20%') }}>Leafy Vegetables</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/salads.jpg')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/salads.jpg')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Salads & Juices</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/regional.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/regional.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Regional Produce</Text>
                         </View>
 
@@ -171,37 +171,37 @@ const Products = () => {
                     </View>
                     <View style={{ width: wp('100%'), height: hp('20%'), justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row' }}>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('./assets/Image/diary.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('../assets/Image/diary.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Diary, Eggs & Bread</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Atta.png')} />
+                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Atta.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center', width: wp('17%') }}>Rice, Atta & Dals</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/dates.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/dates.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Masalas & Dry Fruits</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Edibleoil.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Edibleoil.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Edible Oil & Ghee</Text>
                         </View>
                     </View>
                     <View style={{ width: wp('100%'), height: hp('20%'), justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row' }}>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('./assets/Image/cookies.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('../assets/Image/cookies.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Biscuits & Cookies</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/oats.png')} />
+                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/oats.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center', width: wp('20%') }}>Cereals & Breakfast</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Tea.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Tea.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Tea, Coffee & More</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/salt.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/salt.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Salt, Sugar & Jaggery</Text>
                         </View>
 
@@ -216,37 +216,37 @@ const Products = () => {
                     </View>
                     <View style={{ width: wp('100%'), height: hp('20%'), justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row' }}>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('./assets/Image/Munchies.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('../assets/Image/Munchies.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Munchies</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Colddrinks.png')} />
+                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Colddrinks.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center', width: wp('20%') }}>Cold Drinks & Juices</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Sweet.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Sweet.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Sweet Tooth</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Instant.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Instant.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Instant & Frozen</Text>
                         </View>
                     </View>
                     <View style={{ width: wp('100%'), height: hp('20%'), justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row' }}>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('./assets/Image/Sauces.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('../assets/Image/Sauces.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Sauces & Spreads</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Readymade.png')} />
+                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Readymade.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center', width: wp('20%') }}>Ready to Eat & Cook</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Icecreams.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Icecreams.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Ice Creams</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Indiansnacks.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Indiansnacks.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Indian Snacks</Text>
                         </View>
 
@@ -261,19 +261,19 @@ const Products = () => {
                     </View>
                     <View style={{ width: wp('100%'), height: hp('20%'), justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row' }}>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('./assets/Image/Cleaning.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 20 }} source={require('../assets/Image/Cleaning.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Cleaning & Household</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Stationary.png')} />
+                            <Image style={{ alignSelf: 'center', width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Stationary.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center', width: wp('20%') }}>Stationary & Electrical</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Pooja.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Pooja.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Pooja Needs</Text>
                         </View>
                         <View style={{ width: wp('19%'), height: hp('10%'), backgroundColor: '#E8E9EB', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('./assets/Image/Homeneed.png')} />
+                            <Image style={{ width: wp('16%'), height: hp('13%'), resizeMode: 'contain', marginTop: 28 }} source={require('../assets/Image/Homeneed.png')} />
                             <Text style={{ color: 'black', fontWeight: '400', textAlign: 'center' }}>Home Needs</Text>
                         </View>
                     </View>
@@ -285,7 +285,7 @@ const Products = () => {
                         start={{ x: 0, y: 0 }}
                         end={{ x: 1, y: 0 }} style={{ width: wp('100%'), height: hp('30%') }}
                     >
-                        <Image style={{ width: wp('80%'), height: hp('10%'), marginTop: 10, alignSelf: 'center' }} source={require('./assets/Image/brand.png')} />
+                        <Image style={{ width: wp('80%'), height: hp('10%'), marginTop: 10, alignSelf: 'center' }} source={require('../assets/Image/brand.png')} />
                         <View style={{ flexDirection: 'row' }}>
                             <View style={{ width: wp('30%'), height: hp('16%'), backgroundColor: 'violet', marginLeft: 10 }}>
 

@@ -4,10 +4,10 @@
 // import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 // const images = [
-//     require('./assets/Image/banner1.webp'),
-//     require('./assets/Image/banner2.webp'),
-//     require('./assets/Image/banner3.webp'),
-//     require('./assets/Image/banner4.webp'),
+//     require('../assets/Image/banner1.webp'),
+//     require('../assets/Image/banner2.webp'),
+//     require('../assets/Image/banner3.webp'),
+//     require('../assets/Image/banner4.webp'),
 // ];
 
 // const Banner = () => {
@@ -81,10 +81,10 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { SliderBox } from "react-native-image-slider-box";
 
 const images = [
-    require('./assets/Image/banner1.png'), 
-    require('./assets/Image/banner2.png'),
-    require('./assets/Image/banner3.png'),
-    require('./assets/Image/banner4.png'),
+    require('../assets/Image/banner1.png'), 
+    require('../assets/Image/banner2.png'),
+    require('../assets/Image/banner3.png'),
+    require('../assets/Image/banner4.png'),
 ];
 
 const Banner = () => {

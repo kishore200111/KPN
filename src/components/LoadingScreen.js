@@ -32,7 +32,7 @@ const Loading=()=>{
         <SafeAreaView style={{width:wp('100%'),height:hp('100%'),flex:1}}>
            <View style={{width:wp('100%'),height:hp('100%'),alignItems:'center',justifyContent:'center'}}>
            <Animated.Image 
-            source={require('./assets/Image/kpn-logo.png')}
+            source={require('../assets/Image/kpn-logo.png')}
             onLoad={()=>setIsImageLoaded(true)}
             style={[styles.image,{transform:[{rotate}],resizeMode:'contain'}]}
             />
