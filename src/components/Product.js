@@ -305,20 +305,79 @@ const Products = () => {
                         <View style={{ flex: 1, height: 1, backgroundColor: 'lightgrey', alignSelf: 'center' }} />
                     </View>
 
-                    <View style={{ width: wp('90%'), height: hp('20%'), marginTop: 10, marginLeft: 16 }}>
+                    <View style={{ marginTop: 10, alignItems: 'center' }}>
                         <LinearGradient
                             colors={['rgba(84,38,213,1)', 'rgba(147,116,237,1)']}
                             start={{ x: 0, y: 0 }}
-                            end={{ x: 1, y: 0 }} style={{ width: wp('90%'), height: hp('12%'), borderRadius: 16 }}
+                            end={{ x: 1, y: 0 }} style={{ width: wp('95%'), height: hp('12%'), borderRadius: 16 }}
                         >
-                            <View style={{ width: wp('30%'), height: hp('2%'),flex:1,justifyContent: 'center',marginLeft:5}}>
-                                <View>
-                                    <Pressable style={{ backgroundColor: '#ffffff', borderRadius: 4 }}>
-                                        <Text style={{ color: 'black', fontWeight: '500', padding:2,textAlign: 'center', fontSize: 11 }}>UPTO 10% OFF</Text>
+                            <View style={{ flex: 1, justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row', gap: 20 }}>
+                                <View style={{ gap: 5, alignSelf: 'center', marginLeft: 10 }}>
+                                    <Pressable style={{ backgroundColor: '#ffffff', borderRadius: 4, width: wp('21%') }}>
+                                        <Text style={{ color: 'black', fontWeight: '500', padding: 2, textAlign: 'center', fontSize: 11 }}>UPTO 10% OFF</Text>
                                     </Pressable>
-                                    <Text style={{ color: 'white', fontWeight: '600',fontFamily:'BerkshireSwash' }}>Laundry Made Easy</Text>
+                                    <Text style={{ width: wp('30%'), color: 'white', fontSize: 18, fontWeight: '600', fontFamily: 'BerkshireSwash' }}>Laundry Made Easy</Text>
                                 </View>
 
+                                <View style={{ width: wp('4.6%'), height: hp('2.2%'), backgroundColor: 'white', justifyContent: 'center', borderRadius: 12 }}>
+                                    <Image style={{ alignSelf: 'center', resizeMode: 'contain', width: wp('10%'), height: hp('2%') }} source={require('../assets/Image/arrowicon.png')} />
+                                </View>
+                                <View style={{ marginLeft: 26 }}>
+                                    <Image style={{ width: wp('31%'), height: hp('20%'), resizeMode: 'contain' }} source={require('../assets/Image/Laundry.png')} />
+                                </View>
+
+                            </View>
+
+
+                        </LinearGradient>
+                    </View>
+
+
+                    <View style={{ marginTop: 20, flexDirection: 'row', gap: 20, justifyContent: 'center', alignItems: 'center' }}>
+                        <LinearGradient
+                            colors={['rgba(84,38,213,1)', 'rgba(147,116,237,1)']}
+                            start={{ x: 0, y: 0 }}
+                            end={{ x: 1, y: 0 }} style={{ width: wp('45%'), height: hp('20%'), borderRadius: 16 }}
+                        >
+                            <View style={{ flex: 1, marginTop: 10, justifyContent: 'flex-start', flexDirection: 'column', gap: 5 }}>
+                                <View style={{ gap: 5, flexDirection: 'row', justifyContent: 'space-between', marginLeft: 10, marginRight: 10 }}>
+                                    <Pressable style={{ backgroundColor: '#ffffff', borderRadius: 4, width: wp('21%') }}>
+                                        <Text style={{ color: 'black', fontWeight: '500', padding: 2, textAlign: 'center', fontSize: 11 }}>UPTO 50% OFF</Text>
+                                    </Pressable>
+                                    <View style={{ width: wp('4.6%'), height: hp('2.2%'), backgroundColor: 'white', justifyContent: 'center', borderRadius: 12 }}>
+
+                                        <Image style={{ alignSelf: 'center', resizeMode: 'contain', width: wp('10%'), height: hp('2%') }} source={require('../assets/Image/arrowicon.png')} />
+                                    </View>
+                                </View>
+                                <View>
+                                    <Text style={{ width: wp('40%'), color: 'white', fontSize: 18, fontWeight: '600', fontFamily: 'BerkshireSwash', marginLeft: 10 }}>Turn Your House into a House</Text>
+                                    <Image style={{ width: wp('31%'), height: hp('12%'), resizeMode: 'contain' }} source={require('../assets/Image/Odonil.png')} />
+
+                                </View>
+                            </View>
+
+
+                        </LinearGradient>
+                        <LinearGradient
+                            colors={['rgba(84,38,213,1)', 'rgba(147,116,237,1)']}
+                            start={{ x: 0, y: 0 }}
+                            end={{ x: 1, y: 0 }} style={{ width: wp('45%'), height: hp('20%'), borderRadius: 16 }}
+                        >
+                            <View style={{ flex: 1, marginTop: 10, justifyContent: 'flex-start', flexDirection: 'column', gap: 5 }}>
+                                <View style={{ gap: 5, flexDirection: 'row', justifyContent: 'space-between', marginLeft: 10, marginRight: 10 }}>
+                                    <Pressable style={{ backgroundColor: '#ffffff', borderRadius: 4, width: wp('21%') }}>
+                                        <Text style={{ color: 'black', fontWeight: '500', padding: 2, textAlign: 'center', fontSize: 11 }}>UPTO 50% OFF</Text>
+                                    </Pressable>
+                                    <View style={{ width: wp('4.6%'), height: hp('2.2%'), backgroundColor: 'white', justifyContent: 'center', borderRadius: 12 }}>
+
+                                        <Image style={{ alignSelf: 'center', resizeMode: 'contain', width: wp('10%'), height: hp('2%') }} source={require('../assets/Image/arrowicon.png')} />
+                                    </View>
+                                </View>
+                                <View>
+                                    <Text style={{ width: wp('30%'), color: 'white', fontSize: 18, fontWeight: '600', fontFamily: 'BerkshireSwash', marginLeft: 10 }}>Clean House, Happy Home</Text>
+                                    <Image style={{ width: wp('%'), height: hp('12%'), resizeMode: 'contain' }} source={require('../assets/Image/Cleaner.png')} />
+
+                                </View>
                             </View>
 
 
